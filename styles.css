@@ -1,0 +1,109 @@
+
+.selectAll {
+    width: 20px;
+    height: 20px;
+    margin-right: 14%;
+}
+
+
+@media (max-width: 768px) {
+    .selectAll {
+        margin-right: 14%;
+    }
+
+    .item {
+        margin-right: 0;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+#searchBar {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border: 3px solid #cccccc;
+    font-size: medium;
+}
+
+#searchBar::placeholder {
+    color: #cccccc;
+    font-size: medium;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+    flex: none;
+}
+
+.selectAll {
+    margin-right: 0%;
+}
+
+hr {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-color: rgba(204, 204, 204, 0.3);
+}
+
+.deleteButton {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
+.controlButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.controlsContainer {
+    position: fixed;
+    bottom: 1%;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 20px;
+    }
+}

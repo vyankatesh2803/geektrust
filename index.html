@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div>
+            <input id="searchBar" type="text" placeholder="Search by name, email or role" onkeyup="searchBar()">
+            <div class="flex-container">
+                <input class="selectAll" id="selectAll" type="checkbox" onclick="selectAll()">
+                <strong class="item" style="font-size: 20px;">Name</strong>
+                <strong class="item" style="font-size: 20px;">Email</strong>
+                <strong class="item" style="font-size: 20px;">Role</strong>
+                <strong class="item" style="font-size: 20px;">Actions</strong>
+            </div>
+            <hr>
+            <div id="container">
+
+            </div>
+        </div>
+        <div class="controlsContainer">
+            <button type="button" class="deleteButton" onclick="deleteSelected()">Delete Selected</button>
+            <div id="pagination" class="buttonContainer">
+            </div>
+            <div></div>
+        </div>
+    </body>
+</html>
